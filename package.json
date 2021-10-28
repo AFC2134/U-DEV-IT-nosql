@@ -1,0 +1,28 @@
+{
+  "name": "u-dev-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFC2134/U-DEV-IT-nosql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFC2134/U-DEV-IT-nosql/issues"
+  },
+  "homepage": "https://github.com/AFC2134/U-DEV-IT-nosql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
