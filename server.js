@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+
 const express = require('express');
 const inputCheck = require('./utils/inputCheck');
 const PORT = process.env.PORT || 3001;
@@ -9,17 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // connect to database
-const db = mysql.createConnection(
-    {
-        host: 'localhost',
-        // your MySQL username,
-        user: 'root',
-        // password
-        password: 'Coon3y21',
-        database: 'election'
-    },
-    console.log('Connected to the election database.')
-);
+const db = require('./db/connection');
 
 app.get('/', (req, res) => {
     res.json({
